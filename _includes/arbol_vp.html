@@ -2,120 +2,121 @@
     <head>
         <title> Pruebas grip </title>
           
-          <style>
-                :root {
-                --level-0: purple;
-                --level-1: #8dccad;
-                --level-2: #f5cc7f;
-                --level-3: #7b9fe0;
-                --level-4: #f27c8d;
-                --black: black;
-                }
-                * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-                }
-                ol {
-                list-style: none;
-                }
-                body {
-                    margin: 50px 0 100px;
-                    text-align: center;
-                    font-family: "Inter", sans-serif;
-                    }
-            .container {
-                display: grid;
-                }
-            .rectangle {
-                position: relative;
-                padding: 20px;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-                }
+        <style>
+            :root {
+            --level-0: purple;
+            --level-1: #8dccad;
+            --level-2: #f5cc7f;
+            --level-3: #7b9fe0;
+            --level-4: #f27c8d;
+            --black: black;
+            }
+            * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            }
+            ol {
+            list-style: none;
+            }
+            body {
 
-            .directa {
-                width: 70%;
-                margin: 10px auto 10px;
-                background: var(--level-2);
+                text-align: center;
+                font-family: "Inter", sans-serif;
+                font-size: xx-small;
+                }
+        .container {
+            display: grid;
+            }
+        .rectangle {
+            position: relative;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
             }
 
-            .indirectas {
-                width: 70%;
-                margin: 10px auto 10px;
-                background: var(--level-3);
+        .directa {
+            width: 70%;
+            margin: 5px auto 5px;
+            background: var(--level-2);
+        }
+
+        .indirectas {
+            width: 70%;
+            margin: 5px auto 5px;
+            background: var(--level-3);
+        }
+        .subconsecuencia1 {
+            grid-column: 1;
+            grid-row: 1;
             }
-            .subconsecuencia1 {
-                grid-column: 1;
-                grid-row: 1;
-                }
-            .subconsecuencia2 {
-                grid-column: 2;
-                grid-row: 1;
-                }
-            .subconsecuencia3 {
-                grid-column: 3;
-                grid-row: 1;
-                }
-            .subconsecuencia4 {
-                grid-column: 4;
-                grid-row: 1;
-                }
-            .consecuencia1 {
-                grid-column: 1;
-                grid-row: 2;
-                }
-            .consecuencia2 {
-                grid-column: 2;
-                grid-row: 2;
-                }
-            .consecuencia3 {
-                grid-column: 3;
-                grid-row: 2;
-                }
-            .consecuencia4 {
-                grid-column: 4;
-                grid-row: 2;
-                }
-            .problemacentral {
-                grid-column: 1/5;
-                grid-row: 3;
-                width: 50%;
-                margin: 20px auto 20px;
-                background: var(--level-1);
-                }
-            .causa1 {
-                grid-column: 1;
-                grid-row: 4;
-                }
-            .causa2 {
-                grid-column: 2;
-                grid-row: 4;
-                }
-            .causa3 {
-                grid-column: 3;
-                grid-row: 4;
-                }
-            .causa4 {
-                grid-column: 4;
-                grid-row: 4;
-                }
-            .subcausa1 {
-                grid-column: 1;
-                grid-row: 5;
-                }
-            .subcausa2 {
-                grid-column: 2;
-                grid-row: 5;
-                }
-            .subcausa3 {
-                grid-column: 3;
-                grid-row: 5;
-                }
-            .subcausa4 {
-                grid-column: 4;
-                grid-row: 5;
-                }
-          </style>
+        .subconsecuencia2 {
+            grid-column: 2;
+            grid-row: 1;
+            }
+        .subconsecuencia3 {
+            grid-column: 3;
+            grid-row: 1;
+            }
+        .subconsecuencia4 {
+            grid-column: 4;
+            grid-row: 1;
+            }
+        .consecuencia1 {
+            grid-column: 1;
+            grid-row: 2;
+            }
+        .consecuencia2 {
+            grid-column: 2;
+            grid-row: 2;
+            }
+        .consecuencia3 {
+            grid-column: 3;
+            grid-row: 2;
+            }
+        .consecuencia4 {
+            grid-column: 4;
+            grid-row: 2;
+            }
+        .problemacentral {
+            grid-column: 1/5;
+            grid-row: 3;
+            width: 40%;
+            margin: 10px auto 10px;
+            background: var(--level-1);
+            }
+        .causa1 {
+            grid-column: 1;
+            grid-row: 4;
+            }
+        .causa2 {
+            grid-column: 2;
+            grid-row: 4;
+            }
+        .causa3 {
+            grid-column: 3;
+            grid-row: 4;
+            }
+        .causa4 {
+            grid-column: 4;
+            grid-row: 4;
+            }
+        .subcausa1 {
+            grid-column: 1;
+            grid-row: 5;
+            }
+        .subcausa2 {
+            grid-column: 2;
+            grid-row: 5;
+            }
+        .subcausa3 {
+            grid-column: 3;
+            grid-row: 5;
+            }
+        .subcausa4 {
+            grid-column: 4;
+            grid-row: 5;
+            }
+        </style>
         
     </head>
     <body>
@@ -125,113 +126,113 @@
             <div class="subconsecuencia1">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 1.1.
+                        Efecto indirecto 1.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 1.2.
+                        Efecto indirecto 1.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 1.3.
+                        Efecto indirecto 1.3.
                     </li>
                 </ol>    
             </div>
             <div class="subconsecuencia2">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 2.1.
+                        Efecto indirecto 2.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 2.2.
+                        Efecto indirecto 2.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 2.3.
+                        Efecto indirecto 2.3.
                     </li>
                 </ol> 
             </div>
             <div class="subconsecuencia3">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 3.1.
+                        Efecto indirecto 3.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 3.2.
+                        Efecto indirecto 3.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 3.3.
+                        Efecto indirecto 3.3.
                     </li>
                 </ol>
             </div>
             <div class="subconsecuencia4">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 4.1.
+                        Efecto indirecto 4.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 4.2.
+                        Efecto indirecto 4.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subconsecuencia 4.3.
+                        Efecto indirecto 4.3.
                     </li>
                 </ol>
             </div>
-            <div class="consecuencia1 rectangle directa">Consecuencia 1</div>
-            <div class="consecuencia2 rectangle directa">Consecuencia 2</div>
-            <div class="consecuencia3 rectangle directa">Consecuencia 3</div>
-            <div class="consecuencia4 rectangle directa">Consecuencia 4</div>
-            <div class="problemacentral rectangle">Problema Central</div>
-            <div class="causa1 rectangle directa">Causa 1</div>
-            <div class="causa2 rectangle directa">Causa 2</div>
-            <div class="causa3 rectangle directa">Causa 3</div>
-            <div class="causa4 rectangle directa">Causa 4</div>
+            <div class="consecuencia1 rectangle directa">Efecto directo 1</div>
+            <div class="consecuencia2 rectangle directa">Efecto directo 2</div>
+            <div class="consecuencia3 rectangle directa">Efecto directo 3</div>
+            <div class="consecuencia4 rectangle directa">Efecto directo 4</div>
+            <div title="Este es el problema central" class="problemacentral rectangle">Problema Central</div>
+            <div class="causa1 rectangle directa">Causa directa 1</div>
+            <div class="causa2 rectangle directa">Causa directa 2</div>
+            <div class="causa3 rectangle directa">Causa directa 3</div>
+            <div class="causa4 rectangle directa">Causa directa 4</div>
             <div class="subcausa1">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subcausa 1.1.
+                        Causa indirecta 1.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 1.2.
+                        Causa indirecta 1.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 1.3.
+                        Causa indirecta 1.3.
                     </li>
                 </ol>
             </div>
             <div class="subcausa2">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subcausa 2.1.
+                        Causa indirecta 2.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 2.2.
+                        Causa indirecta 2.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 2.3.
+                        Causa indirecta 2.3.
                     </li>
                 </ol>
             </div>
             <div class="subcausa3">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subcausa 3.1.
+                        Causa indirecta 3.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 3.2.
+                        Causa indirecta 3.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 3.3.
+                        Causa indirecta 3.3.
                     </li>
                 </ol>
             </div>
             <div class="subcausa4">
                 <ol>
                     <li class="rectangle indirectas">
-                        Subcausa 4.1.
+                        Causa indirecta 4.1.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 4.2.
+                        Causa indirecta 4.2.
                     </li>
                     <li class="rectangle indirectas">
-                        Subcausa 4.3.
+                        Causa indirecta 4.3.
                     </li>
                 </ol>
             </div>
